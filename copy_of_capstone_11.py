@@ -28,7 +28,7 @@ zip_path = "/usr/share/nltk_data/corpora/wordnet.zip"
 extract_path = "/usr/share/nltk_data/corpora/"
 
 with zipfile.ZipFile(zip_path, 'r') as zip_ref:
-    zip_ref.extractall(extract_path
+    zip_ref.extractall(extract_path)
 
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
