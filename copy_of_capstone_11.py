@@ -22,8 +22,13 @@ import matplotlib.pyplot as plt
 
 import nltk
 
-import nltk
-nltk.download('wordnet')
+import zipfile
+
+zip_path = "/usr/share/nltk_data/corpora/wordnet.zip"
+extract_path = "/usr/share/nltk_data/corpora/"
+
+with zipfile.ZipFile(zip_path, 'r') as zip_ref:
+    zip_ref.extractall(extract_path
 
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
