@@ -22,7 +22,8 @@ import matplotlib.pyplot as plt
 
 import nltk
 
-!unzip /usr/share/nltk_data/corpora/wordnet.zip -d /usr/share/nltk_data/corpora/
+import nltk
+nltk.download('wordnet')
 
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
